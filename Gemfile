@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.5.0'
-gem 'rails', '~> 5.1', '>= 5.1.5'
+gem 'rails', '~> 5.1'
 gem 'pg', '~> 1.0'
 gem 'devise', '~> 4.4'
 gem 'devise_invitable', '~> 1.7'
@@ -20,7 +20,7 @@ gem 'jbuilder'
 group :development, :test do
   gem 'faker', '~> 1.8', '>= 1.8.7'
   gem 'timecop'
-  gem 'database_cleaner', '1.6.2'
+  gem 'database_cleaner', '1.7.0'
   gem 'launchy'
   gem 'simplecov', require: false
   gem 'sinatra'
@@ -59,7 +59,7 @@ group :test do
   gem 'puffing-billy', '~> 1.0'
   gem 'poltergeist'
   gem 'phantomjs', require: 'phantomjs/poltergeist'
-  gem 'show_me_the_cookies'
+  gem 'show_me_the_cookies', '~> 4.0'
 end
 
 group :production do
@@ -101,17 +101,17 @@ gem 'url_validator', git: 'https://github.com/AgileVentures/url_validator.git'
 gem 'httparty'
 gem 'sucker_punch', '~> 2.0' # async job
 gem 'rails_autolink'
-gem 'paranoia', '~> 2.0'
+gem 'paranoia', '~> 2.4'
 
 gem 'dotenv-rails'
 gem 'figaro'
 gem 'airbrake'
 
 # Using user friendly names in URLs
-gem 'friendly_id', '~> 5.2.3'
+gem 'friendly_id', '~> 5.2.4'
 
 # SEO
-gem 'meta-tags', '~> 2.8'
+gem 'meta-tags', '~> 2.9'
 
 #Social
 gem 'twitter',      '~> 6.2'
